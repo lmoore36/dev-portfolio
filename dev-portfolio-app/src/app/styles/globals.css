@@ -1,0 +1,204 @@
+/* General Styling */
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color: #fff;
+  font-family: "Courier New", monospace;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  position: relative;
+}
+
+h1 {
+font-size: 36px;
+text-align: center;
+margin-top: 20px;
+color:#e1e1e4;
+}
+
+footer {
+bottom: 0;
+background-color: #060b17;
+color: #e1e1e4;
+text-align: center;
+padding: 10px 0;
+width: 100%;
+opacity: 0.85;
+}
+
+footer p {
+margin: 0;
+font-size: 14px; 
+}
+
+section {
+padding-bottom: 150px;
+}
+
+/* Text Effect Styling */
+.typewriter-container {
+position: relative;
+text-align: center;
+}
+
+h1.typewriter {
+  font-size: 50px;
+  padding-top: 20px;
+  text-align: center; 
+}
+
+@media (max-width: 580px) {
+  h1.typewriter {
+      font-size: 30px; 
+      padding-top: 10px;
+  }
+}
+
+@media (min-width: 1800px) {
+h1.typewriter.site-title {
+    font-size: 80px;
+}
+
+.typewriter-container {
+  margin-top: -20vh;
+}
+}
+
+.typewriter {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid transparent;
+  padding-right: 5px;
+  padding-bottom: 20px;
+  animation: typing 5s steps(120, end);
+  margin: 0 auto;
+  font-weight: bold;
+  text-align: center;
+}
+
+.typewriter::after {
+  content: "_";
+  display: inline-block;
+  width: 0;
+  text-align: center;
+  animation: infinite, blink-underscore 1s step-end infinite;
+}
+
+@keyframes typing {
+0% {
+  width: 0;
+}
+100% {
+  width: 100%;
+}
+}
+
+@keyframes blink-underscore {
+0%, 100% {
+  content: "_";
+}
+50% {
+  content: "";
+}
+}
+
+/* Small Screen Scaling Styling */
+
+@media (max-width: 580px) {
+.phone-space {
+    padding-top: 250px;
+}
+}
+
+.mobile-spacing {
+display:none
+}
+
+@media (max-width: 580px) {
+.mobile-spacing {
+  display:block;
+}
+}
+
+@media (min-width: 1800x) {
+.mobile-spacing {
+  display:block;
+}
+}
+
+
+/* Home Section Styling */
+#home {
+  height: 100vh; /* Make the section take up the full height of the viewport */
+  display: flex; /* Use flexbox to center content vertically */
+  flex-direction: column; /* Arrange content vertically */
+  justify-content: center; /* Center content vertically */
+  position: relative; /* Ensure z-index works */
+  z-index: 1;
+}
+
+.intro-text {
+  font-size: 20px;
+  text-align: center;
+  margin: 40px;
+  max-width: 100%;
+  opacity: 1;
+  transform: translateY(0);
+  transition: transform 1s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition-delay: 2ms;
+}
+
+@media (max-width: 580px) {
+  .intro-text {
+    font-size: 16px;
+    padding: 10px;
+    margin: 0;
+  }
+}
+
+@media (min-width: 1800px) {
+  .intro-text {
+    font-size: 24px;
+    padding: 10px;
+  }
+}
+
+.highlight {
+  font-weight: bold;
+  color: inherit;
+}
+
+/* social button styling */
+.social-buttons {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.github-button, .linkedin-button {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: black;
+  margin: 0 10px;
+  transition: background-color 0.3s ease;
+}
+
+.github-button img, .linkedin-button img {
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+}
+
+.github-button:hover, .linkedin-button:hover {
+  background-color: #444;
+}
