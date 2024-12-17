@@ -35,9 +35,9 @@ export default function Home() {
               <p className="intro-text">
                 Hi, I'm Lucy. I'm a student at UNC Chapel Hill studying <b>Computer Science</b> and <b>Peace, War, and Defense</b>.
                 I currently specialise in
-                <span className="highlight" style={{ color: "yellow" }}> Python</span>,
-                <span className="highlight" style={{ color: "magenta" }}> C#</span> and
-                <span className="highlight" style={{ color: "lightgreen" }}> JavaScript</span>.
+                <span className="highlight" style={{ color: "#B89B72" }}> Python</span>,
+                <span className="highlight" style={{ color: "#B89B72" }}> C#</span> and
+                <span className="highlight" style={{ color: "#B89B72" }}> JavaScript</span>.
               </p>
 
               {/* social media buttons */}
